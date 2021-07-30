@@ -1,0 +1,111 @@
+<html>
+<head>
+<style>
+.email {
+    width: 400px;
+    margin: 0 auto;
+}
+.data, .extra {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: #666666;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.extra {
+    font-size: 16px;
+}
+a {
+    text-decoration: none;
+}
+.foot, .last {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    color: #bfbfbf;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.logo {
+    border-right: 2px solid #d9d9d9;
+    vertical-align: middle;
+    padding-right: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.name {
+    vertical-align: middle;
+    padding-left: 20px;
+}
+hr {
+    border: none;
+    height: 2px;
+    background: #d9d9d9;
+    width: 400px;
+    margin-bottom: 20px;
+}
+button {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align:middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    width: 380px;
+    margin: 10px;
+}
+button:hover {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+    cursor: pointer;
+}
+.company {
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+</style>
+</head>
+<body>
+<div class="email">
+<img class="logo" src="https://1000logos.net/wp-content/uploads/2017/02/insta-logo.png" height="60" width="60"> 
+<img class="name" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/1200px-Instagram_logo.svg.png" height="60" width="168">
+<br>
+<hr align="left" size="2">
+<div class="data">
+<br>
+Hi,
+<br> <br>
+Sorry to hear you're having trouble logging into Instagram. We can help you get straight back into your account.
+<br><br>
+</div>
+<center> <a href="{{ url.webserver }}"><button type="button"><b>Log in as username</b></button></a></center>
+<br>
+<div class="extra">
+<a href="{{ url.webserver }}">Didn't request this email?</a>
+</div>
+<br>
+<div class="foot">
+from<br>
+<img src="https://i2.wp.com/sguru.org/wp-content/uploads/2018/02/facebook-logo-black.png?ssl=1" height="20" class="company">
+</div>
+<br>
+<div class="last">
+<b>&#169; Instagram. Facebook Inc., 1601 Willow Road, Menlo Park, CA 94025</b>
+<br>
+This mesage was sent to <u>{{ client.email }}</u> and intended for username.
+</div>
+</div>
+</body>
+</html>
